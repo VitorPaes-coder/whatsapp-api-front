@@ -7,7 +7,8 @@
 body{
     height: 100vh;
     width: 100vw;
-    
+    font-family:'Segoe UI';
+
 }
 
 main {
@@ -34,15 +35,13 @@ main {
     height: 5%;
     padding: 5px;
     border-bottom: 2px solid #35947f;
-    background-color: rgb(223, 218, 218);
-    border-radius: 10px;
 }
 
 #search input{
     width: 90%;
-    font-size: 32px;
+    font-size: 22px;
     text-align:start;
-    padding-inline: 5px;
+    padding-inline: 1px;
     border: none;
     outline: none;
     border-radius: 10px;
@@ -54,6 +53,30 @@ main {
     height: 95%;
     margin-top: 10px;
     background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-card {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid #858585;
+    cursor: pointer;
+}
+
+.contact-card h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: #585858;
 }
 
 #chat {
@@ -99,3 +122,4 @@ main {
     height: 90%;
     width: 5%;
 }
+
