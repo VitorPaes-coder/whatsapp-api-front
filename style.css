@@ -68,6 +68,12 @@ main {
     border-bottom: 2px solid #858585;
     background-color: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card:hover  {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
 }
 
 .contact-card h2 {
@@ -95,24 +101,40 @@ main {
     flex-direction: column;
     height: 90%;
     width: 100%;
+    padding-top: 50px;
     gap: 50px;
     border-bottom-left-radius: 10px;
     background-color: #dfdbdb;
 }
 
 .message-card {
-    display: flex;
-    width: auto;
+    display: inline-block;
+    position: relative;
+    padding: 10px 14px;
+    border-radius: 8px;
     max-width: 60%;
-    min-height: 30px;
-    max-height: fit-content;
-    background-color: #25d366;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 1.4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+
 .sent {
-    display: flex;
     align-self: flex-end;
+    background-color: #dcf8c6; /* bolha verde clara */
+    border-bottom-right-radius: 0;
+    margin-right: 15px;
+
 }
+
+.received {
+    align-self: flex-start;
+    background-color: #ffffff; /* bolha branca */
+    border-bottom-left-radius: 0;
+    margin-left: 15px;
+}
+
 
 #type-text {
     display: flex;
@@ -142,4 +164,12 @@ main {
     align-self: center;
     height: 90%;
     width: 5%;
+}
+
+.message-time {
+    font-size: 11px;
+    color: gray;
+    position: flex;
+    bottom: 8px;
+    right: 10px;
 }
