@@ -164,6 +164,10 @@ main {
     align-self: center;
     height: 90%;
     width: 5%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-right: 10px;
 }
 
 .message-time {
